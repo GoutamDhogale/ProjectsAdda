@@ -34,13 +34,49 @@ ExpectedDate Date not null,
 
 <br>
 <h2>Select statement</h2>
-select * from StudentDetails
-<br><br>
+<hr>
+select * from TrainerDetails
+<br>
+
+
 <h2>drop statemet</h2>
 drop table StudentDetails
 <br>
 <br>
 <h2>Insert statement</h2>
 insert into StudentDetails values('Goutam','9481248849','Malavalli po:Bare tq:yellapur Uttarakanada 581337','WaterLevelDetector','When water level fall it should indicate','12/02/2022');
-<br><br>
+
+<br>
 insert into StudentDetails values('Ganesh','9481248849','Malavalli po:Bare tq:yellapur Uttarakanada 581337','WaterLevelDetector','When water level fall it should indicate','12/02/2022');
+<br>
+insert into TrainerDetails values('Mukesh','866005699','mumbi','12/02/2333 9:20','2/03/2333',1)
+<br>
+
+<h3>Join Statement</h3>
+<br>
+select StudentName,StudentPhoneNumber,TrainerName from StudentDetails 
+
+inner join TrainerDetails ON StudentDetails.StudentId = TrainerDetails.TrainerId 
+select * from StudentDetails
+<br><br>
+<hr>
+<h3>TrainerDetails Table structure</h3>
+Create Table TrainerDetails(
+<br>
+TrainerId int identity(1,1) primary key,
+<br>
+TrainerName Varchar(50) not null,
+<br>
+TrainerPhoneNumber varchar(10) not null,
+<br>
+TrainerAddress varchar(80) not null,
+<br>
+TrainerAvilability DateTime not null,
+<br>
+ExpectedDateOfComplition Date not null,
+StudentId int,
+<br>
+FOREIGN KEY (StudentId) REFERENCES StudentDetails(StudentId)
+<br>
+);
+<hr>
