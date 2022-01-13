@@ -1,16 +1,16 @@
-<h1>Idea behind ProjectsAdda</h1>
+<h2><i><b>Idea behind ProjectsAdda<b></i></h2>
 <p>Any student wants to learn How projects are build and how to Work with Hardware and Software components then he or she needs some Guide or they need to know how to build a project .</p>
 <p>This platfrom provoide both.i.e projects and training</p>
 
-<h2>ProjectsAdda DataBase Querys</h2>
-<h3>CreateDataBase Query</h3>
-<p>create database ProjectsAdda</p>
-<h3>Use CreatedDataBase Query</h3>
-use ProjectsAdda
+* <h2><i>ProjectsAdda DataBase Querys</i></h2>
+* <h3>CreateDataBase Query</h3>
+  <p>create database ProjectsAdda</p>
+* <h3>Use CreatedDataBase Query</h3>
+  use ProjectsAdda
 
-<h3>Table Stucture</h3>
+<h3><i>Table Stucture</i></h3>
 <hr>
-<h3>StudentDetails Table</h3>
+<h3><i>StudentDetails Table</i></h3>
 create table StudentDetails(
 <br>
 Id int identity(1,1) primary key,
@@ -64,7 +64,7 @@ inner join TrainerDetails ON StudentDetails.StudentId = TrainerDetails.TrainerId
 select * from StudentDetails
 <br><br>
 <hr>
-<h3>TrainerDetails Table structure</h3>
+<h3><i>TrainerDetails Table structure</i></h3>
 Create Table TrainerDetails(
 <br>
 TrainerId int identity(1,1) primary key,
