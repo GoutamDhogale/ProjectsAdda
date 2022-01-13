@@ -35,12 +35,16 @@ ExpectedDate Date not null,
 <br>
 <h2>Select statement</h2>
 <hr>
+select * from StudentDetails
+<br>
 select * from TrainerDetails
 <br>
 
 
 <h2>drop statemet</h2>
 drop table StudentDetails
+<br>
+drop table TrainerDetails
 <br>
 <br>
 <h2>Insert statement</h2>
@@ -52,7 +56,7 @@ insert into StudentDetails values('Ganesh','9481248849','Malavalli po:Bare tq:ye
 insert into TrainerDetails values('Mukesh','866005699','mumbi','12/02/2333 9:20','2/03/2333',1)
 <br>
 
-<h3>Join Statement</h3>
+<h3>Join Statement(ON StudentDetail & TrainerDetails Tables)</h3>
 <br>
 select StudentName,StudentPhoneNumber,TrainerName from StudentDetails 
 
